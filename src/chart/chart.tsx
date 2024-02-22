@@ -89,6 +89,9 @@ const Chart: FC = () => {
                 max: data
                   ? data.sort((a, b) => b.value - a.value)[0].value + 2
                   : 0,
+                axisLabel: {
+                  showMinLabel: false,
+                },
               },
               series: [
                 {
